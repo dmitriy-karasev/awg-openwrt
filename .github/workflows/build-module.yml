@@ -12,17 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "23.05-SNAPSHOT"
-            pkgarch: aarch64_cortex-a53_neon-vfpv4
-            target: ipq60xx
-            subtarget: generic
-            vermagic: "fcb9998d2791e1b338dfc43d7410e143"
-          - tag: "23.05.0"
-            pkgarch: aarch64_cortex-a53_neon-vfpv4
-            target: ipq60xx
-            subtarget: generic
-            vermagic: "fcb9998d2791e1b338dfc43d7410e143"
-
+          - tag: "24.10.0"
+            pkgarch: aarch64_cortex-a53
+            target: mediatek
+            subtarget: filogic
+            vermagic: "0645ca2e528c1ec9171c95cdd5761b53-r1"
 
     steps:
       - uses: actions/checkout@v4
